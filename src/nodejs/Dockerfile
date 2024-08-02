@@ -1,6 +1,6 @@
 FROM node:14
 
 WORKDIR /app
-COPY main.js .
+COPY . .
 
-CMD ["node", "main.js"]
+CMD ["node", "main.mjs"]
