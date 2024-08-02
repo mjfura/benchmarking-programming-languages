@@ -12,3 +12,9 @@ services:
       context: ./src/nodejs
       dockerfile: Dockerfile
     container_name: nodejs_benchmark
+  
+  php:
+    build:
+      context: ./src/php
+      dockerfile: Dockerfile
+    container_name: php_benchmark

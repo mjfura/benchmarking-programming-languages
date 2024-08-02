@@ -1,6 +1,10 @@
 import {init} from './base/hola_mundo.mjs'
-const startTime = Date.now();
+console.log('----------------------')
+console.log('NODEJS')
+console.log('----------------------')
+const startTime = process.hrtime();
 init()
-const endTime = Date.now();
-const executionTime = (endTime - startTime);
+const [seconds, nanoseconds] = process.hrtime(startTime);
+const executionTime = (seconds * 1e3) + (nanoseconds / 1e6); 
+
 console.log(`Tiempo de Ejecución: ${executionTime}ms`);
