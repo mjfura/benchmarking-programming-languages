@@ -18,3 +18,9 @@ services:
       context: ./src/php
       dockerfile: Dockerfile
     container_name: php_benchmark
+  
+  rust:
+    build:
+      context: ./src/rust
+      dockerfile: Dockerfile
+    container_name: rust_benchmark
