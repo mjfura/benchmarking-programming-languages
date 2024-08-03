@@ -24,3 +24,15 @@ services:
       context: ./src/rust
       dockerfile: Dockerfile
     container_name: rust_benchmark
+
+  c:
+    build:
+      context: ./src/c
+      dockerfile: Dockerfile
+    container_name: c_benchmark
+  
+  java:
+    build:
+      context: ./src/java
+      dockerfile: Dockerfile
+    container_name: java_benchmark

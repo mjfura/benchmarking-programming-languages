@@ -11,5 +11,5 @@ fn main() {
     let end_time = std::time::Instant::now();
     let duration = end_time.duration_since(start_time);
     let duration_ms = duration.as_millis();
-    println!("Tiempo de Ejecución: {:?}", duration_ms);
+    println!("Tiempo de Ejecución: {:?} ms", duration_ms);
 }
